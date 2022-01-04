@@ -1,0 +1,176 @@
+.App {
+  background: #72a1bf 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* padding-top: 205px; */
+  display: grid;
+  place-items: center;
+}
+.homeBtn {
+  top: 29px;
+  left: 32px;
+  width: 84px;
+  height: 42px;
+
+  background: #f2faff;
+  border-radius: 4px;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  font: normal normal normal 14px/19px Segoe UI;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #a0a3a5;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.container {
+  width: 65%;
+  /* height: 60%; */
+  height: 480px;
+  border-radius: 36px;
+}
+.header {
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  background: #074770;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  position: relative;
+}
+.form > input,
+label {
+  display: block;
+  margin: 0.5rem;
+  color: #a5c0d1;
+}
+.form > input {
+  width: 130px;
+  height: 30px;
+  background: #f2faff 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.781);
+}
+.add {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  width: 130px;
+  height: 39px;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+.data-container {
+  display: flex;
+  height: 80%;
+  border-bottom-right-radius: 36px;
+}
+.data {
+  background-color: #f2faff;
+  width: 50%;
+  height: 100%;
+  border-bottom-left-radius: 36px;
+  position: relative;
+}
+.data > h1 {
+  color: #123043;
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+li {
+  list-style: numbers;
+  margin-left: 2rem;
+  display: inline-block;
+  margin-right: 3rem;
+  color: #123043bd;
+}
+p {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #000000;
+  text-transform: uppercase;
+}
+.map {
+  height: 100%;
+  width: 100%;
+}
+.routes {
+  background: #074770;
+  border-radius: 21px;
+  text-align: center;
+  font: normal normal bold 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  width: 90%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  padding: 0.5rem;
+}
+
+.routes-disabled {
+  background-color: #c6d1d9;
+}
+
+.message {
+  position: absolute;
+  top: 10%;
+}
+
+@media (max-width: 1070px) {
+  .form > input,
+  label {
+    width: 90px;
+    height: 15px;
+  }
+  .add {
+    top: 46%;
+    width: 90px;
+    height: 25px;
+  }
+  .data > h1 {
+    font-size: 14px;
+  }
+  li,
+  p {
+    font-size: 12px;
+  }
+  .routes {
+    width: 70%;
+  }
+}
+
+@media (max-width: 766px) {
+  .form > input,
+  label {
+    width: 60px;
+    height: 15px;
+  }
+  .form > label {
+    width: max-content;
+  }
+  .add {
+    top: 55%;
+    right: 1%;
+    width: 60px;
+    height: 20px;
+  }
+  .data > h1 {
+    font-size: 12px;
+  }
+  li,
+  p {
+    font-size: 8px;
+  }
+  .routes {
+    width: 80%;
+  }
+}
