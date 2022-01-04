@@ -34,7 +34,8 @@ function App() {
 
   const sendData = async () => {
     //console.log("click");
-    const response = await fetch("http://localhost:3001/");
+    const deployedUrl = "https://saveo-91.herokuapp.com/";
+    const response = await fetch(deployedUrl);
 
     const data = await response.json();
     //console.log(data);
